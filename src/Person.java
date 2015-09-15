@@ -21,6 +21,11 @@ public class Person {
 	public void setName(String name) {
 		this._name = name;
 	}
+	
+	// READ-ONLY Access Modifier for this._age
+	public int getAge() {
+		return this._age;
+	}
 
 	// CONSTRUCTOR ++++++++++++++++++++++++++++++++++++++++++++++
 	public Person(int age) {
@@ -29,7 +34,7 @@ public class Person {
 	
 	// PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++
 	public void runs() {
-		System.out.printf("%s Runs", this._name);
+		System.out.printf("%s Runs \n", this.getName());
 	}
 	
 }
