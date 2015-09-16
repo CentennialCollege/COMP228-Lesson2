@@ -29,8 +29,16 @@ public class Person {
 
 	// CONSTRUCTOR ++++++++++++++++++++++++++++++++++++++++++++++
 	public Person(int age) {
+		this._initialize(age, "Unknown", "Unknown");
+	}
+	
+	// PRIVATE METHODS +++++++++++++++++++++++++++++++++++++++++++
+	private void _initialize(int age, String name, String gender) {
+		this.setName(name);
+		this.setGender(gender);
 		this._age = age;
 	}
+	
 	
 	// PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++
 	public void runs() {
